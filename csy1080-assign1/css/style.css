@@ -5,16 +5,54 @@
 }
 
 /*shows element borders*/
-* {
+/* {
    border: 1px solid;
+} */
+
+.container {
+  height: 200px;
+  background-color: deepskyblue;
+
 }
+
+.header-img {
+  position: absolute; /*element is positioned relative to container*/
+  border-radius: 100px; /*makes image oval shaped*/
+  top: 15px;
+  left: 15px;
+  border: 4px solid #000;
+
+
+}
+
+.header-main-txt {
+  position: absolute;
+  color: white;
+  top: 75px;
+  left: 150px;
+
+}
+
+.header-sub-txt {
+  color: white;
+  position: absolute;
+  top: 125px;
+  left: 150px;
+}
+
+.container img:hover {
+  transform: scale(1.05); /*increases image size when hovered over*/
+}
+
+
 
 /*defines navigation class's styles*/
 .navigation {
-  margin-top: 150px; /*adds 150px space above element*/
   background-color: #999; /*sets colour to #999 (grey)*/
   display: flex; /*enables flex content*/
   justify-content: center; /*centers content*/
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
 }
 
 .navigation li {
@@ -40,9 +78,6 @@
 }
 
 .navigation li a:hover {
-    background-color: #000; /*sets background colour of li items to black when hovered over*/
-}
+  text-decoration: underline; /*underlines text on hover*/
 
-.container {
-  
 }

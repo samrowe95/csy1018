@@ -1,0 +1,48 @@
+/* CSS Reset*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/*shows element borders*/
+* {
+   border: 1px solid;
+}
+
+/*defines navigation class's styles*/
+.navigation {
+  margin-top: 150px; /*adds 150px space above element*/
+  background-color: #999; /*sets colour to #999 (grey)*/
+  display: flex; /*enables flex content*/
+  justify-content: center; /*centers content*/
+}
+
+.navigation li {
+  display: inline; /*displays element as an inline element*/
+  width: 400px;
+  height: 50px;
+  line-height: 50px;
+
+  font-weight: bold; /*makes font bold*/
+  font-size: 2em;
+  text-align: center; /*aligns text in center*/
+
+
+}
+
+
+.navigation a {
+  text-decoration: none;
+  display: block; /*display element as block element*/
+  color: white;
+
+
+}
+
+.navigation li a:hover {
+    background-color: #000; /*sets background colour of li items to black when hovered over*/
+}
+
+.container {
+  
+}

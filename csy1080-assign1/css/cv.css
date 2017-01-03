@@ -105,8 +105,45 @@ body {
 
 .content {
   height: 100%;
+  overflow: scroll;
 }
 
+.cv-heading {
+  margin-top: 50px;
+  text-align: center;
+}
+
+#statement {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.education-div {
+  text-align: center;
+}
+
+.experience-div {
+  text-align: center;
+}
+
+
+.itskills-div {
+  text-align: center;
+  list-style-position: inside;
+}
+
+#itskills-list {
+  display: inline-block;
+  text-align: left;
+}
+
+.pskills {
+  text-align: center;
+}
 
 
 

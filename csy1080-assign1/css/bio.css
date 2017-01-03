@@ -91,40 +91,36 @@ body {
 }
 
 
-.navigation a:link {
+.navigation a {
   text-decoration: none;
   color: white;
 
 }
 
-
 .navigation li a:hover {
   text-decoration: underline; /*underlines text on hover*/
 }
-
 
 .content {
   height: 100%;
 }
 
-
-.main-txt {
-  padding: 50px;
+.bio-heading {
+  margin-top: 50px;
   text-align: center;
-  font-size: 2em;
 }
 
-.main-img {
-  display: block;
+.bio-main {
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
-  max-width: 400px;
-  max-height: 400px;
-  max-width: 80%;
-  margin-bottom: 50px;
-  border-radius: 25px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  text-align: left;
+  font-size: 1.25em;
 
 }
+
 
 .footer {
   margin: auto;
@@ -154,9 +150,10 @@ body {
 .header-sub {
   font-size: 1em;
 }
-.main-txt {
-  font-size: 1em;
 
+.bio-main {
+  width: 80%;
+  font-size: 1em;
 }
 
 @media screen and (max-width: 400px) { /*makes the changes below when the screen size is 400px and below*/
@@ -176,5 +173,11 @@ body {
 .header-sub {
     font-size: 0.7em;
   }
+
+
+.bio-main {
+  width: 80%;
+  font-size: 1em;
+}
 
 }

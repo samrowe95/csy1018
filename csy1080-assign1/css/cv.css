@@ -1,6 +1,6 @@
-/*  {
+/* {
   border: 1px solid; /*shows element borders*/
- } */
+ }
 
 * {
   padding: 0;
@@ -108,23 +108,7 @@ body {
 }
 
 
-.main-txt {
-  padding: 50px;
-  text-align: center;
-  font-size: 2em;
-}
 
-.main-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 400px;
-  max-height: 400px;
-  max-width: 80%;
-  margin-bottom: 50px;
-  border-radius: 25px;
-
-}
 
 .footer {
   margin: auto;
@@ -154,8 +138,7 @@ body {
 .header-sub {
   font-size: 1em;
 }
-.main-txt {
-  font-size: 1em;
+
 
 }
 

@@ -134,6 +134,10 @@ body {
 }
 
 /*form label/text rule*/
+
+/*Modified this code for my contact form
+  Tryit Editor v3.3. 2017. Tryit Editor v3.3. [ONLINE]
+  Available at: http://www.w3schools.com/css/tryit.asp?filename=trycss_forms. [Accessed 04 January 2017].*/
 input[type=text] {
   width: 100%;
   padding: 12px 20px;

@@ -1,14 +1,22 @@
+/*Sam Rowe
+Student id: 16431878*/
+
+/*contact.html css file*/
+
+/*resets browser defauts*/
 * {
   padding: 0;
   margin: 0;
 }
 
+/*body rule*/
 body {
   background-color: #2a2a2a;
   font-family: 'Roboto', sans-serif; /* sets font to Roboto or any san-serif font if Roboto unavailable*/
   font-size: 100%;
  }
 
+/*container div rule (defines layout of container which holds everything)*/
 .container {
   position: relative; /* position relative to normal position */
   width: 80%; /* width = 80% of screen width*/
@@ -22,7 +30,7 @@ body {
 
  }
 
-
+/*header div rule*/
 .header {
   padding: 0;
   margin: 0;
@@ -32,6 +40,7 @@ body {
 
  }
 
+/*header image rule*/
 .header-img {
   position: absolute; /*position relative to parent (header)*/
   border-radius: 100%; /*makes image oval shaped*/
@@ -40,6 +49,7 @@ body {
   border: 4px solid #000;
  }
 
+/*header main text rule*/
 .header-main {
   position: absolute;
   color: white;
@@ -49,6 +59,7 @@ body {
 
  }
 
+/*header sub text rule*/
 .header-sub {
   color: white;
   position: absolute;
@@ -57,12 +68,12 @@ body {
 
  }
 
-
+/*header image on hover rule*/
 .header img:hover {
   transform: scale(1.05); /*increases image size when hovered over*/
  }
 
-
+/*navigation div rule*/
 .navigation {
   background-color: #999;
   text-align: center;
@@ -71,13 +82,14 @@ body {
   border-bottom: 1px solid #000;
 }
 
+/*navigation ul rule*/
 .navigation ul {
   padding: 0;
   margin: 0;
 }
 
+/*navigation li rule*/
 .navigation li {
-
   display: inline-block;
   font-weight: bold;
   letter-spacing: 2px;
@@ -86,39 +98,42 @@ body {
 
 }
 
-
+/*navigation a rule*/
 .navigation a {
   text-decoration: none;
   color: white;
 
 }
 
-
+/*navigation li a on hover rule*/
 .navigation li a:hover {
   text-decoration: underline; /*underlines text on hover*/
 }
 
-
+/*content rule*/
 .content {
   height: 100%;
 }
 
+/*contact heading rule*/
 .contact-heading {
   margin-top: 10px;
   text-align: center;
   font-size: 2em;
 }
 
-/*Form Rules*/
+/*form Rules*/
 
+/*form div rule*/
 .form {
   width: 60%;
   margin-left: auto;
   margin-right: auto;
   background-color: white;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
+/*form label/text rule*/
 input[type=text] {
   width: 100%;
   padding: 12px 20px;
@@ -129,6 +144,7 @@ input[type=text] {
   box-sizing: border-box;
 }
 
+/*form button rule*/
 input[type=submit] {
   width: 100%;
   background-color: #00bbff;
@@ -140,10 +156,12 @@ input[type=submit] {
 
 }
 
+/*form button on hover rule*/
 input[type=submit]:hover {
   background-color: blue;
 }
 
+/*form textarea rule*/
 textarea {
   width: 100%;
   border-radius: 4px;
@@ -154,27 +172,32 @@ textarea {
 
 }
 
+/*socialmedia div rule*/
 .socialmedia {
-  margin-top: 20px;
+  margin-top: 50px;
   text-align: center;
 }
 
+/*social media icon link div rule*/
 .smlinks {
   margin-top: 50px;
   margin-bottom: 25px;
 }
 
+/*socialmedia icon image rule*/
 .smicon {
   width: 64px;
   height: 64px;
 }
 
+/*socialmedia icon image on hover rule*/
 .smicon:hover {
   width: 84px;
   height: 84px;
 
 }
 
+/*footer div*/
 .footer {
   margin: auto;
   padding: 10px;
@@ -186,42 +209,47 @@ textarea {
 /* Media Queries */
 @media screen and (max-width: 700px) {  /*makes the changes below when the screen size is 700px and below*/
 
-.container {
-  position: relative;
-  width: 100%;
-  background-color: white;
-  border: 1px solid #000;
-}
+  /*container rule for when the screen size is 700px wide and below*/
+  .container {
+    position: relative;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #000;
+  }
 
 
+  /*main header text rule for when the screen size is 700px wide and below*/
+  .header-main {
+    font-size: 1.5em;
 
-.header-main {
-  font-size: 1.5em;
+  }
 
-}
-
-.header-sub {
-  font-size: 1em;
-}
+  /*sub header text rule for when the screen size is 700px wide and below*/
+  .header-sub {
+    font-size: 1em;
+  }
 
 
 }
 
 @media screen and (max-width: 400px) { /*makes the changes below when the screen size is 400px and below*/
 
-.container {
+  /*container rule for when the screen size is 400px wide and below*/
+  .container {
     position: relative;
     width: 100%;
     background-color: white;
     border: 1px solid #000;
-}
+  }
 
-.header-main {
+  /*main header text rule for when the screen size is 400px wide and below*/
+  .header-main {
     font-size: 1em;
 
   }
 
-.header-sub {
+  /*sub header text rule for when the screen size is 400px wide and below*/
+  .header-sub {
     font-size: 0.7em;
   }
 

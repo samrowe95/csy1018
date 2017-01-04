@@ -1,28 +1,36 @@
+/*Sam Rowe
+Student id: 16431878*/
+
+/*Index.html css file*/
+
+/*resets browser defauts*/
 * {
   padding: 0;
   margin: 0;
 }
 
+/*body rule*/
 body {
-    background-color: #2a2a2a;
-    font-family: 'Roboto', sans-serif; /* sets font to Roboto or any san-serif font if Roboto unavailable*/
-    font-size: 100%;
+  background-color: #2a2a2a; /*sets background colour to hex code colour */
+  font-family: 'Roboto', sans-serif; /* sets font to Roboto or any san-serif font if Roboto unavailable*/
+  font-size: 100%;
  }
 
+/*container div rule (defines layout of container which holds everything)*/
 .container {
   position: relative; /* position relative to normal position */
   width: 80%; /* width = 80% of screen width*/
   margin-top: 50px;
   margin-bottom: 50px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: auto; /*makes it so that the container is centered*/
+  margin-right: auto; /*makes it so that the container is centered*/
   background-color: white;
-  border: 1px solid #000;
+  border: 1px solid #000; /*gives container a black border 1px thick*/
 
 
  }
 
-
+/*header div rule*/
 .header {
   padding: 0;
   margin: 0;
@@ -32,23 +40,25 @@ body {
 
  }
 
+/*header image rule*/
 .header-img {
-   position: absolute; /*position relative to parent (header)*/
-   border-radius: 100%; /*makes image oval shaped*/
-   top: 15px;
-   left: 15px;
-   border: 4px solid #000;
+  position: absolute; /*position relative to parent (header)*/
+  border-radius: 100%; /*makes image oval shaped*/
+  top: 15px; /*moves the image 15px down from the top*/
+  left: 15px; /*moves the image 15px right from the left*/
+  border: 4px solid #000;
  }
 
+/*header main text rule*/
 .header-main {
-   position: absolute;
-   color: white;
-   top: 75px;
-   left: 150px;
-
+  position: absolute;
+  color: white; /*sets text colour to white*/
+  top: 75px;
+  left: 150px;
 
  }
 
+/*header sub text rule*/
 .header-sub {
   color: white;
   position: absolute;
@@ -57,60 +67,62 @@ body {
 
  }
 
-
+/*header image on hover rule*/
 .header img:hover {
   transform: scale(1.05); /*increases image size when hovered over*/
  }
 
-
+/*navigation div rule*/
 .navigation {
   background-color: #999;
-  text-align: center;
+  text-align: center; /*aligns text in the center*/
   width: 100%;
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
 }
 
+/*navigation ul rule*/
 .navigation ul {
   padding: 0;
   margin: 0;
 }
 
+/*navigation li rule*/
 .navigation li {
-
   display: inline-block;
   font-weight: bold;
-  letter-spacing: 2px;
+  letter-spacing: 2px; /*increases spaces between letters by 2px*/
   margin: 20px;
-  text-transform: uppercase;
+  text-transform: uppercase; /*makes all the navigation text uppercase*/
 
 }
 
-
+/*navigation a rule*/
 .navigation a {
   text-decoration: none;
   color: white;
 
 }
 
-
+/*navigation li a on hover rule*/
 .navigation li a:hover {
   color: white;
   text-decoration: underline; /*underlines text on hover*/
 }
 
-
+/*content rule*/
 .content {
   height: 100%;
 }
 
-
+/*text in content rule*/
 .main-txt {
   padding: 50px;
   text-align: center;
   font-size: 2em;
 }
 
+/*content image rule*/
 .main-img {
   display: block;
   margin-left: auto;
@@ -123,54 +135,65 @@ body {
 
 }
 
+/*footer rule*/
 .footer {
   margin: auto;
   padding: 10px;
   color: white;
   background-color: #999;
+
 }
 
 
 /* Media Queries */
-@media screen and (max-width: 700px) {  /*makes the changes below when the screen size is 700px and below*/
+@media screen and (max-width: 700px) {  /*makes the changes below when the screen size is 700px wide and below*/
 
-.container {
-  position: relative;
-  width: 100%;
-  background-color: white;
-  border: 1px solid #000;
-}
+  /*container rule for when the screen size is 700px wide and below*/
+  .container {
+    position: relative;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #000;
+  }
 
 
+  /*main header text rule for when the screen size is 700px wide and below*/
+  .header-main {
+    font-size: 1.5em;
 
-.header-main {
-  font-size: 1.5em;
+  }
 
-}
+  /*sub header text rule for when the screen size is 700px wide and below*/
+  .header-sub {
+    font-size: 1em;
+  }
 
-.header-sub {
-  font-size: 1em;
-}
-.main-txt {
-  font-size: 1em;
+  /*main content text rule for when the screen size is 700px wide and below*/
+  .main-txt {
+    font-size: 1em;
+
+  }
 
 }
 
 @media screen and (max-width: 400px) { /*makes the changes below when the screen size is 400px and below*/
 
-.container {
+  /*container rule for when the screen size is 400px wide and below*/
+  .container {
     position: relative;
     width: 100%;
     background-color: white;
     border: 1px solid #000;
-}
+  }
 
-.header-main {
+   /*main header text rule for when the screen size is 400px wide and below*/
+  .header-main {
     font-size: 1em;
 
   }
 
-.header-sub {
+   /*sub header text rule for when the screen size is 400px wide and below*/
+  .header-sub {
     font-size: 0.7em;
   }
 

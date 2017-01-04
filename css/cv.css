@@ -1,14 +1,22 @@
+/*Sam Rowe
+Student id: 16431878*/
+
+/*cv.html css file*/
+
+/*resets browser defauts*/
 * {
   padding: 0;
   margin: 0;
 }
 
+/*body rule*/
 body {
-    background-color: #2a2a2a;
-    font-family: 'Roboto', sans-serif; /* sets font to Roboto or any san-serif font if Roboto unavailable*/
-    font-size: 100%;
+  background-color: #2a2a2a;
+  font-family: 'Roboto', sans-serif; /* sets font to Roboto or any san-serif font if Roboto unavailable*/
+  font-size: 100%;
  }
 
+/*container div rule (defines layout of container which holds everything)*/
 .container {
   position: relative; /* position relative to normal position */
   width: 80%; /* width = 80% of screen width*/
@@ -22,7 +30,7 @@ body {
 
  }
 
-
+/*header div rule*/
 .header {
   padding: 0;
   margin: 0;
@@ -32,23 +40,25 @@ body {
 
  }
 
+/*header image rule*/
 .header-img {
-   position: absolute; /*position relative to parent (header)*/
-   border-radius: 100%; /*makes image oval shaped*/
-   top: 15px;
-   left: 15px;
-   border: 4px solid #000;
+  position: absolute; /*position relative to parent (header)*/
+  border-radius: 100%; /*makes image oval shaped*/
+  top: 15px;
+  left: 15px;
+  border: 4px solid #000;
  }
 
+/*header main text rule*/
 .header-main {
-   position: absolute;
-   color: white;
-   top: 75px;
-   left: 150px;
-
+  position: absolute;
+  color: white;
+  top: 75px;
+  left: 150px;
 
  }
 
+/*header sub text rule*/
 .header-sub {
   color: white;
   position: absolute;
@@ -57,12 +67,12 @@ body {
 
  }
 
-
+/*header image on hover rule*/
 .header img:hover {
   transform: scale(1.05); /*increases image size when hovered over*/
  }
 
-
+/*navigation div rule*/
 .navigation {
   background-color: #999;
   text-align: center;
@@ -71,11 +81,13 @@ body {
   border-bottom: 1px solid #000;
 }
 
+/*navigation ul rule*/
 .navigation ul {
   padding: 0;
   margin: 0;
 }
 
+/*navigation li rule*/
 .navigation li {
 
   display: inline-block;
@@ -86,28 +98,31 @@ body {
 
 }
 
-
+/*navigation a rule*/
 .navigation a {
   text-decoration: none;
   color: white;
 
 }
 
+/*navigation li a on hover rule*/
 .navigation li a:hover {
   text-decoration: underline; /*underlines text on hover*/
 }
 
-
+/*content rule*/
 .content {
   height: 100%;
-  overflow: scroll;
+  overflow: scroll; /*When the content in the content div overflows, makes it so that is scrolls*/
 }
 
+/*cv heading rule*/
 .cv-heading {
   margin-top: 50px;
   text-align: center;
 }
 
+/*cv statememt rule*/
 #statement {
   width: 80%;
   margin-left: auto;
@@ -117,51 +132,60 @@ body {
   text-align: left;
 }
 
+/*education div rule*/
 .education-div {
   text-align: center;
   margin-bottom: 50px;
 }
 
+/*text in education div rule*/
 .education {
   margin-bottom: 25px;
 }
 
+/*experience-div rule*/
 .experience-div {
   text-align: center;
   margin-bottom: 50px;
 }
 
+/*text in experience div rule*/
 .experience {
   margin-bottom: 25px;
 }
 
+/*it skills div rule*/
 .itskills-div {
   text-align: center;
   list-style-position: inside;
   margin-bottom: 50px;
 }
 
+/*it skills heading rule*/
 #itskills {
   margin-bottom: 50px;
 }
 
+/*it skills ul rule*/
 #itskills-list {
   display: inline-block;
   text-align: left;
   margin-bottom: 25px;
 }
 
+/*pskills div rule*/
 .pskills-div {
   text-align: center;
   margin-bottom: 50px;
 }
 
+/*pskills text rule*/
 .pskills {
   margin-bottom: 25px;
 }
 
 
-
+/*footer div rule*/
 .footer {
   margin: auto;
   padding: 10px;
@@ -173,42 +197,47 @@ body {
 /* Media Queries */
 @media screen and (max-width: 700px) {  /*makes the changes below when the screen size is 700px and below*/
 
-.container {
-  position: relative;
-  width: 100%;
-  background-color: white;
-  border: 1px solid #000;
-}
+  /*container rule for when the screen size is 700px wide and below*/
+  .container {
+    position: relative;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #000;
+  }
 
 
+  /*main header text rule for when the screen size is 700px wide and below*/
+  .header-main {
+    font-size: 1.5em;
 
-.header-main {
-  font-size: 1.5em;
+  }
 
-}
-
-.header-sub {
-  font-size: 1em;
-}
+  /*sub header text rule for when the screen size is 700px wide and below*/
+  .header-sub {
+    font-size: 1em;
+  }
 
 
 }
 
 @media screen and (max-width: 400px) { /*makes the changes below when the screen size is 400px and below*/
 
-.container {
+  /*container rule for when the screen size is 400px wide and below*/
+  .container {
     position: relative;
     width: 100%;
     background-color: white;
     border: 1px solid #000;
-}
+  }
 
-.header-main {
+  /*main header text rule for when the screen size is 400px wide and below*/
+  .header-main {
     font-size: 1em;
 
   }
 
-.header-sub {
+  /*sub header text rule for when the screen size is 400px wide and below*/
+  .header-sub {
     font-size: 0.7em;
   }
 

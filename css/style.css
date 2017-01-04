@@ -1,7 +1,3 @@
-/*  {
-  border: 1px solid; /*shows element borders*/
- } */
-
 * {
   padding: 0;
   margin: 0;
@@ -97,30 +93,35 @@ body {
 
 }
 
+
 .navigation li a:hover {
+  color: white;
   text-decoration: underline; /*underlines text on hover*/
 }
+
 
 .content {
   height: 100%;
 }
 
-.bio-heading {
-  margin-top: 50px;
+
+.main-txt {
+  padding: 50px;
   text-align: center;
+  font-size: 2em;
 }
 
-.bio-main {
-  width: 80%;
+.main-img {
+  display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  text-align: left;
-  font-size: 1.25em;
+  max-width: 400px;
+  max-height: 400px;
+  max-width: 80%;
+  margin-bottom: 50px;
+  border-radius: 25px;
 
 }
-
 
 .footer {
   margin: auto;
@@ -150,10 +151,9 @@ body {
 .header-sub {
   font-size: 1em;
 }
-
-.bio-main {
-  width: 80%;
+.main-txt {
   font-size: 1em;
+
 }
 
 @media screen and (max-width: 400px) { /*makes the changes below when the screen size is 400px and below*/
@@ -173,11 +173,5 @@ body {
 .header-sub {
     font-size: 0.7em;
   }
-
-
-.bio-main {
-  width: 80%;
-  font-size: 1em;
-}
 
 }

@@ -1,16 +1,12 @@
-/* {
-  border: 1px solid; /*shows element borders*/
- }
-
 * {
   padding: 0;
   margin: 0;
 }
 
 body {
-    background-color: #2a2a2a;
-    font-family: 'Roboto', sans-serif; /* sets font to Roboto or any san-serif font if Roboto unavailable*/
-    font-size: 100%;
+  background-color: #2a2a2a;
+  font-family: 'Roboto', sans-serif; /* sets font to Roboto or any san-serif font if Roboto unavailable*/
+  font-size: 100%;
  }
 
 .container {
@@ -37,18 +33,18 @@ body {
  }
 
 .header-img {
-   position: absolute; /*position relative to parent (header)*/
-   border-radius: 100%; /*makes image oval shaped*/
-   top: 15px;
-   left: 15px;
-   border: 4px solid #000;
+  position: absolute; /*position relative to parent (header)*/
+  border-radius: 100%; /*makes image oval shaped*/
+  top: 15px;
+  left: 15px;
+  border: 4px solid #000;
  }
 
 .header-main {
-   position: absolute;
-   color: white;
-   top: 75px;
-   left: 150px;
+  position: absolute;
+  color: white;
+  top: 75px;
+  left: 150px;
 
 
  }
@@ -91,7 +87,7 @@ body {
 }
 
 
-.navigation a:link {
+.navigation a {
   text-decoration: none;
   color: white;
 
@@ -105,47 +101,79 @@ body {
 
 .content {
   height: 100%;
-  overflow: scroll;
 }
 
-.cv-heading {
-  margin-top: 50px;
+.contact-heading {
+  margin-top: 10px;
   text-align: center;
+  font-size: 2em;
 }
 
-#statement {
-  width: 80%;
+/*Form Rules*/
+
+.form {
+  width: 60%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  text-align: left;
+  background-color: white;
+  margin-top: 100px;
 }
 
-.education-div {
-  text-align: center;
-}
-
-.experience-div {
-  text-align: center;
-}
-
-
-.itskills-div {
-  text-align: center;
-  list-style-position: inside;
-}
-
-#itskills-list {
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
   display: inline-block;
-  text-align: left;
+  border: 1px solid;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
-.pskills {
+input[type=submit] {
+  width: 100%;
+  background-color: #00bbff;
+  color: white;
+  padding: 14px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+
+}
+
+input[type=submit]:hover {
+  background-color: blue;
+}
+
+textarea {
+  width: 100%;
+  border-radius: 4px;
+  margin-top: 10px;
+  border: 1px solid;
+  font-size: 1em;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.socialmedia {
+  margin-top: 20px;
   text-align: center;
 }
 
+.smlinks {
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
 
+.smicon {
+  width: 64px;
+  height: 64px;
+}
+
+.smicon:hover {
+  width: 84px;
+  height: 84px;
+
+}
 
 .footer {
   margin: auto;

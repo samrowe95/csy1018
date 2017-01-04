@@ -87,72 +87,36 @@ body {
 }
 
 
-.navigation a:link {
+.navigation a {
   text-decoration: none;
   color: white;
 
 }
 
-
 .navigation li a:hover {
   text-decoration: underline; /*underlines text on hover*/
 }
 
-
 .content {
   height: 100%;
+  overflow: scroll;
 }
 
-.contact-heading {
+.bio-heading {
+  margin-top: 50px;
   text-align: center;
-  font-size: 2em;
 }
 
-/*Form Rules*/
-
-.form {
-  width: 60%;
+.bio-main {
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
-  background-color: white;
-  margin-top: 100px;
-}
-
-input[type=text] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-input[type=submit] {
-  width: 100%;
-  background-color: #00bbff;
-  color: white;
-  padding: 14px 20px;
-  margin-top: 10px;
-  border: none;
-  border-radius: 4px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  text-align: left;
+  font-size: 1.25em;
 
 }
-
-input[type=submit]:hover {
-  background-color: blue;
-}
-
-textarea {
-  width: 100%;
-  border-radius: 4px;
-  margin-top: 10px;
-  border: 1px solid;
-  font-size: 1em;
-  font-family: 'Roboto', sans-serif;
-
-}
-
 
 
 .footer {
@@ -184,7 +148,9 @@ textarea {
   font-size: 1em;
 }
 
-
+.bio-main {
+  width: 80%;
+  font-size: 1em;
 }
 
 @media screen and (max-width: 400px) { /*makes the changes below when the screen size is 400px and below*/
@@ -204,5 +170,11 @@ textarea {
 .header-sub {
     font-size: 0.7em;
   }
+
+
+.bio-main {
+  width: 80%;
+  font-size: 1em;
+}
 
 }
